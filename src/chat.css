@@ -1,0 +1,41 @@
+.chats{
+max-width: 700px;
+/* background-color: red; */
+overflow-y: scroll;   /* if data overFollow we can Scolle it */
+padding: 8rem;
+width: 100%;
+}
+.userDiv{
+    display: flex;
+    justify-content: flex-end;
+    font-size: 0.9rem;
+    line-height: 25px;
+
+
+}
+.gptDiv{
+    text-align: left;
+    font-size: 0.9rem;
+    line-height: 25px;
+
+}
+.userMessage{
+    background-color: #323232;
+    padding: 10px 20px;
+    border-radius: 10px;
+    margin-left: 15rem;
+    max-width: 500px;
+    width: fit-content;
+
+}
+
+/* this class in inside this tag -> ReactMarkdown */
+.hljs{   
+    border-radius: 14px;
+}
+.pre{
+    white-space: pre-wrap;
+}
+
+
+
