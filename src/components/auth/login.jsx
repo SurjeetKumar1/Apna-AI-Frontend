@@ -76,7 +76,7 @@ const Login = () => {
         </div>
         <div className="pass-box">
           <p>
-            New to ApnaGPT? <Link to="/createAccount">Create an account</Link>
+            New to Apna AI? <Link to="/createAccount">Create an account</Link>
           </p>
         </div>
       </div>

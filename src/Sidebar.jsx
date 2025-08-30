@@ -2,13 +2,15 @@ import React, { useContext, useEffect } from 'react';
 import { MyContext } from './MyContext';
 import {v1 as uuidv1} from "uuid";
 import "./sidebar.css"
+import { BACKEND_URL } from './config';
 function Sidebar() {
    const {allThreads,setAllThreads,reply,currThreadID,setCurrThreadID,setNewChat,setPrompt,setReply,setPrevChats}=useContext(MyContext);
 
    const getAllThreads=async()=>{
      try{
       const token = localStorage.getItem("token");
-const respose=await fetch("http://localhost:8080/api/thread",{
+// const respose=await fetch("http://localhost:8080/api/thread",{
+   const respose=await fetch(`${BACKEND_URL}/api/thread`,{
    method: "GET",
    headers: {
      "Content-Type": "application/json",
@@ -42,7 +44,8 @@ setAllThreads(filterData);
    const changeThread=async(threadId)=>{
        setCurrThreadID(threadId);
        try{
-         let response=await fetch(`http://localhost:8080/api/thread/${threadId}`);
+         // let response=await fetch(`http://localhost:8080/api/thread/${threadId}`);
+         let response=await fetch(`${BACKEND_URL}/api/thread/${threadId}`);
          response=await response.json();
          console.log(response);
          setPrevChats(response);
@@ -58,7 +61,8 @@ setAllThreads(filterData);
          method:"DELETE"
       }
       try{
-         let response=await fetch(`http://localhost:8080/api/thread/${threadId}`,options);
+         // let response=await fetch(`http://localhost:8080/api/thread/${threadId}`,options);
+         let response=await fetch(`${BACKEND_URL}/api/thread/${threadId}`,options);
          response=await response.json();
          console.log(response);
          

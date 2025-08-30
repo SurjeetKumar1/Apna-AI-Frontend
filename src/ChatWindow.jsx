@@ -5,6 +5,7 @@ import { MyContext } from './MyContext.jsx';
 import {ScaleLoader,HashLoader} from "react-spinners";
 import { useAuth } from './components/auth/AuthContext.jsx';
 import { v1 as uuidv1 } from "uuid";
+import { BACKEND_URL } from './config/index.js';
 function ChatWindow() {
     const {prompt,setPrompt,reply,setReply,currThreadID,setCurrThreadID,setAllThreads,setPrevChats,setNewChat}=useContext(MyContext);
     const [loading,setLoading]=useState(false);
@@ -29,7 +30,8 @@ function ChatWindow() {
         }
         
         try{
-         let response=   await fetch("http://localhost:8080/api/chat",options);
+        //  let response=   await fetch("http://localhost:8080/api/chat",options);
+         let response=   await fetch(`${BACKEND_URL}/api/chat`,options);
           response=await response.json();
           console.log(response.reply);
          setReply(response.reply);
