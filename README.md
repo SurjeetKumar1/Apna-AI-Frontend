@@ -18,6 +18,13 @@ This document outlines the complete process for setting up an automated CI/CD pi
 
 
 ---
+<br><br>
+![Successful Workflow Run in GitHub Actions](https://github.com/SurjeetKumar1/Apna-AI-Frontend/blob/main/public/assets/ec2-machine.png)
+<br><br>
+<br><br>
+![Successful Workflow Run in GitHub Actions](https://github.com/SurjeetKumar1/Apna-AI-Frontend/blob/main/public/assets/portopen.png)
+<br><br>
+
 
 ## 2. GitHub Actions Self-Hosted Runner Setup 🏃‍♀️
 
@@ -42,6 +49,9 @@ We need a dedicated runner for our frontend repository on the EC2 instance.
     Your EC2 instance is now also listening for jobs from your frontend repository!
 
 ---
+<br><br>
+![Successful Workflow Run in GitHub Actions](https://github.com/SurjeetKumar1/Apna-AI-Frontend/blob/main/public/assets/frontend-runner.png)
+<br><br>
 
 ## 3. GitHub Actions Workflow Configuration ⚙️
 
@@ -82,6 +92,10 @@ jobs:
     ```
 
 ---
+
+<br><br>
+![Successful Workflow Run in GitHub Actions](https://github.com/SurjeetKumar1/Apna-AI-Frontend/blob/main/public/assets/frontendworkflow.png)
+<br><br>
 
 ## 4. Nginx Configuration for Serving the Site 🌐
 
@@ -136,4 +150,15 @@ After pushing a change to the `main` branch, the GitHub Action will run and buil
 
 To see your deployed frontend, simply navigate to your EC2 instance's public DNS in your browser:
 
-`http://ec2-54-210-6-159.compute-1.amazonaws.com
+`http://ec2-54-210-6-159.compute-1.amazonaws.com`
+
+
+<br><br>
+![Successful Workflow Run in GitHub Actions](https://github.com/SurjeetKumar1/Apna-AI-Frontend/blob/main/public/assets/frontend-live-login.png)
+<br><br>
+
+
+<br><br>
+![Successful Workflow Run in GitHub Actions](https://github.com/SurjeetKumar1/Apna-AI-Frontend/blob/main/public/assets/frontend-live-chat.png)
+<br><br>
+
