@@ -53,12 +53,11 @@ Follow these steps to configure your frontend CI/CD pipeline.
 
 You can use the same EC2 instance you set up for your backend.
 
-<br><br>
-![Successful Workflow Run in GitHub Actions](https://github.com/SurjeetKumar1/Apna-AI-Frontend/blob/main/public/assets/ec2-machine.png)
-<br><br>
-<br><br>
-![Successful Workflow Run in GitHub Actions](https://github.com/SurjeetKumar1/Apna-AI-Frontend/blob/main/public/assets/portopen.png)
-<br><br>
+<p align="center">
+  <img src="https://github.com/SurjeetKumar1/Apna-AI-Frontend/blob/main/public/assets/ec2-machine.png" alt="EC2 Machine Details" width="70%"/>
+  <br/><br/>
+  <img src="https://github.com/SurjeetKumar1/Apna-AI-Frontend/blob/main/public/assets/portopen.png" alt="Security Group Ports" width="70%"/>
+</p>
 
 1.  **Prerequisites:** Ensure your EC2 instance is running and you can connect to it via SSH.
 2.  **Required Software:** Confirm that **Node.js**, **npm**, and **Nginx** are installed.
