@@ -1,3 +1,10 @@
+<div align="center">
+<h1 style="color: red;"><strong>NOTE: Backend Repository</strong></h1>
+<p><strong>The Backend code for this application is in a separate repository. You can find it here:<br><a href="https://github.com/SurjeetKumar1/Apna-AI-Backend">https://github.com/SurjeetKumar1/Apna-AI-Backend</a></strong></p>
+</div>
+
+---
+
 # **Frontend CI/CD Pipeline: AWS EC2 & GitHub Actions 🎨**
 
 <p align="center">
